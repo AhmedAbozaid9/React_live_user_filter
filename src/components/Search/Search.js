@@ -21,6 +21,7 @@ function Search({searchValue}) {
         className="search"
         type="text"
         placeholder="Search"
+        autoFocus
         value={value}
         onChange={handleChange}
       />

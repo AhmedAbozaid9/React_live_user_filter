@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ReactLoading from "react-loading";
 
 import "./Contacts.css";
 import Contact from "../Contact/Contact";
@@ -16,9 +17,17 @@ function Contacts({ numberOfContacts, value }) {
   return (
     <div className="container">
       <div className="contacts">
-        {data.filter((contact => filterByTerm(contact,value))).map((contact) => (
-          <Contact key={contact.login.uuid} contact={contact} />
-        ))}
+        {data[0] ? (
+          data
+            .filter((contact) => filterByTerm(contact, value))
+            .map((contact) => (
+              <Contact key={contact.login.uuid} contact={contact} />
+            ))
+        ) : (
+          <div className="spinner">
+            <ReactLoading color={"black"} type={"spin"} />
+          </div>
+        )}
       </div>
     </div>
   );

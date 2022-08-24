@@ -11,7 +11,12 @@ function App() {
   return (
     <>
       <Header searchValue={searchValue} />
-      <Contacts numberOfContacts={50} value={value} />
+      <Contacts
+        numberOfContacts={50}
+        value={value}
+        height={"200px"}
+        width={"200px"}
+      />
     </>
   );
 }
