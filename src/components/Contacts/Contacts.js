@@ -25,7 +25,12 @@ function Contacts({ numberOfContacts, value }) {
             ))
         ) : (
           <div className="spinner">
-            <ReactLoading color={"black"} type={"spin"} />
+            <ReactLoading
+              color={"#554994"}
+              type={"spin"}
+              height={"80px"}
+              width={"80px"}
+            />
           </div>
         )}
       </div>

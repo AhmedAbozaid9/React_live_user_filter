@@ -14,8 +14,6 @@ function App() {
       <Contacts
         numberOfContacts={50}
         value={value}
-        height={"200px"}
-        width={"200px"}
       />
     </>
   );
