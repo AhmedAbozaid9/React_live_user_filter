@@ -8,13 +8,13 @@ function Search({searchValue}) {
   const handleChange = (e) => {
     const newValue = e.target.value;
     setValue(newValue);
+    searchValue(value)
   };
 
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        searchValue(value)
       }}
     >
       <input

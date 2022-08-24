@@ -6,7 +6,6 @@ import Header from "./Header/Header";
 function App() {
   const [value, setValue] = useState("");
   const searchValue = (value) => {
-    console.log(value);
     setValue(value);
   };
   return (
