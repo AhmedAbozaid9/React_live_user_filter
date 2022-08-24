@@ -1,0 +1,16 @@
+.header {
+  background-color: #554994;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+.info {
+  margin: 1rem 0;
+}
+.info h3,
+.info p {
+  margin: 10px 0;
+}
+.info p {
+  opacity: 0.8;
+}

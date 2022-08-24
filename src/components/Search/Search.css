@@ -1,0 +1,14 @@
+.search {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 0;
+  border-radius: 50px;
+  color: #fff;
+  font-size: inherit;
+  padding: 10px 15px;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.search:focus {
+  outline: none;
+}

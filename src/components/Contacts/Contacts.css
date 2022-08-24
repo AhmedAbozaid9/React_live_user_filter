@@ -1,0 +1,6 @@
+.contacts {
+  overflow-y: auto;
+  background-color: #fff;
+  max-height: 400px;
+  border-radius: 0 0 10px 10px;
+}
