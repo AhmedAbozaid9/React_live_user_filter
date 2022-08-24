@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useState } from "react";
 
-import Contacts from './Contacts/Contacts'
-import Header from './Header/Header'
+import Contacts from "./Contacts/Contacts";
+import Header from "./Header/Header";
 
 function App() {
+  const [value, setValue] = useState("");
+  const searchValue = (value) => {
+    console.log(value);
+    setValue(value);
+  };
   return (
     <>
-      <Header/>
-      <Contacts numberOfContacts={10}/>
+      <Header searchValue={searchValue} />
+      <Contacts numberOfContacts={50} value={value} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

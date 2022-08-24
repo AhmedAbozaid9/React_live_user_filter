@@ -1,0 +1,17 @@
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+}
+.contact:not(:last-child){
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.contact img {
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 65px;
+  height: 65px;
+}
+.contact h4 {
+  margin: 15px 0;
+}

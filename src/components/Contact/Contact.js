@@ -4,7 +4,7 @@ import "./Contact.css"
 
 function Contact({contact}) {
   return (
-    <div>
+    <div className='contact'>
       <img src={contact.picture.large} alt= {contact.name.first} />
       <div className="user-info">
         <h4>{contact.name.first} {contact.name.last}</h4>

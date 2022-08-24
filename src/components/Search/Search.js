@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./Search.css";
 
-function Search() {
+function Search({searchValue}) {
   const [value, setValue] = useState("");
 
   const handleChange = (e) => {
@@ -14,6 +14,7 @@ function Search() {
     <form
       onSubmit={(e) => {
         e.preventDefault();
+        searchValue(value)
       }}
     >
       <input
